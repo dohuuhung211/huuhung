@@ -13,4 +13,11 @@
         echo "Key = " . $key . ", Value = " . $val;
         echo "<br>";
     }
+    foreach($arr as $key => $val){
+        if($val == max($arr)){
+            echo $key.' lon tuoi nhat: '.$val;
+        } else if($val == min($arr)){
+            echo $key.' nho tuoi nhat:'.$val;
+        }
+    }
 ?>

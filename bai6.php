@@ -1,17 +1,14 @@
 <?php
     // Nhập vào 1 chuối và tìm kiếm 1 chuỗi “test” trong chuỗi đã nhập
-    $str1 = "asdbkjqwtestkamdkasd";
-    $str2 = "kamd";
-    $arr1 = str_split($str1);
-    $arr2 = str_split($str2);
-    foreach($arr1 as $val){
-        echo $val;
-    }
-    if (strlen(strstr($str1, $str2)) > 0) {
-        echo 'chuoi 2 nam trong chuoi 1';
+    $str1 = "thu test bai tap";
+    if(str_contains($str1, 'test')){
+        echo 'chuoi \'test\' co nam trong chuoi '.$str1;
     } else {
-        echo 'chuoi 2 khong nam trong chuoi 1';
+        echo 'chuoi \'test\' khong nam trong chuoi '.$str1;
     }
+
+ 
+
     // $flag = false;
     // $i = 0; 
     // $j = 0;
